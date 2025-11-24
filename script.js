@@ -28,7 +28,7 @@ buttons.forEach(btn => {
 
             let expression = display.value;
 
-            // ❗ If multiplication by zero → ERROR
+            
             if (hasZeroMultiplication(expression)) {
                 display.value = "Error";
                 display.classList.add("error");
@@ -38,7 +38,7 @@ buttons.forEach(btn => {
             try {
                 let result = eval(expression);
 
-                if (!isFinite(result)) {     // Infinity, -Infinity, NaN
+                if (!isFinite(result)) {     
                     display.value = "Error";
                     display.classList.add("error");
                 } else {
@@ -61,3 +61,4 @@ darkModeBtn.addEventListener("click", () => {
     darkModeBtn.textContent =
         document.body.classList.contains("dark") ? "Light Mode" : "Dark Mode";
 });
+
