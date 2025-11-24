@@ -1,0 +1,151 @@
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e6e6e6;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 340px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+#display {
+    width: 100%;
+    height: 65px;
+    font-size: 28px;
+    text-align: right;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+
+
+.correct {
+    background: #d5ffd5;
+    border-color: #21c521;
+}
+
+
+
+.error {
+    background: #ffd7d7;
+    border-color: #ff3333;
+}
+
+
+.mode {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+.btn {
+    padding: 18px;
+    font-size: 20px;
+    border: none;
+    background: #e3e3e3;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.operator {
+    background: #d7d7ff;
+}
+
+.clear {
+    background: #ff6b6b;
+    color: white;
+}
+
+.backspace {
+    grid-column: span 4;
+    background: #ff3b30;
+    color: white;
+}
+
+.equal {
+    grid-column: span 4;
+    background: #ff9500;
+    color: white;
+    font-weight: bold;
+}
+
+
+.dark {
+    background: #1e1e1e !important;
+}
+
+.dark .calculator {
+    background: #2a2a2a;
+    color: white;
+}
+
+.dark #display {
+    background: #333;
+    color: white;
+    border-color: #555;
+}
+
+.dark .btn {
+    background: #444;
+    color: white;
+}
+
+.dark .operator {
+    background: #5555aa;
+}
+
+.dark .clear {
+    background: #cc0000;
+}
+
+.dark .backspace {
+    background: #bb0000;
+}
+
+.dark .equal {
+    background: #ff9500;
+}
+
+.dark .mode {
+    background: white;
+    color: black;
+}
